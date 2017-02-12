@@ -6,7 +6,7 @@ package CommandPattern;
 public class RemoteControlTest {
     public static void main(String[] args){
         SimpleRemoteControl remote = new SimpleRemoteControl();
-        Light light = new Light();
+        Light light = new Light("Room");
         LightOnCommand lightOn = new LightOnCommand(light);
         GarageDoor garageDoor = new GarageDoor();
         GarageDoorOpenCommand garageOpen = new GarageDoorOpenCommand();
